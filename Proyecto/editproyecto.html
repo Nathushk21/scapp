@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/scripts/javamenu.js" defer></script>
+    <script src="/scripts/javapro.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <a href="/proyectos.html" class="back-arrow"><img src="/images/flecha.png" alt=""></a>
+            <span class="title">Proyectos</span>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+
+        <div class="project-entry-container">
+            <label class="section-label">Categoría del proyecto</label>
+            <div class="category-icons">
+                <img src="/images/proyecto/mensajeros.png" alt="mensajeros" class="category-icon" onclick="selectCategory(this)">
+                <img src="/images/proyecto/tribu.png" alt="tribu" class="category-icon" onclick="selectCategory(this)">
+                <img src="/images/proyecto/panda.png" alt="panda" class="category-icon" onclick="selectCategory(this)">
+                <img src="/images/proyecto/marea.png" alt="marea" class="category-icon" onclick="selectCategory(this)">
+                <img src="/images/proyecto/gosolar.png" alt="gosolar" class="category-icon" onclick="selectCategory(this)">
+            </div>
+
+            <label class="section-label">Fecha inicio</label>
+            <input type="date" class="date-input">
+
+            <label class="section-label">Fecha Final</label>
+            <input type="date" class="date-input">
+
+            <label class="section-label">Nombre del proyecto</label>
+            <input type="text" class="text-input" placeholder="Escribe aquí...">
+
+            <label class="section-label">Objetivo</label>
+            <input type="text" class="text-input" placeholder="Escribe aquí...">
+
+            <label class="section-label">Participantes</label>
+            <input type="text" class="text-input" placeholder="Escribe aquí...">
+
+            <label class="section-label">Subir imágenes</label>
+            <input type="file" class="file-input">
+        </div>
+
+        <div class="bottom-bar">
+            <div class="icon-container">
+                <div class="icon">&#x1F4C4;</div>
+                <div class="icon">&#x1F4C3;</div>
+            </div>
+        </div>
+
+        
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/especialidades.html">Especializaciones</a>
+            <a href="/reconocimientos.html">Reconocimientos</a>
+            <a href="/proyectos.html">Proyectos</a>
+            <a href="/notas.html">Notas</a>
+            <a href="/bitacora.html">Bitacora</a>
+            <a href="ajustes.html">Ajustes</a>
+        </div>
+    </div>
+</body>
+</html>
